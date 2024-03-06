@@ -1,0 +1,81 @@
+
+REST API User
+---------------
+
+Отримання всіх даних
+GET
+http://localhost:8081/api/v1/contacts
+
+
+Створення даних
+POST
+http://localhost:8081/api/v1/contacts
+
+Виконуємо окремі запити.
+Налаштування в Postman: Body, raw, JSON.
+
+{
+    "name": "John",
+    "phone": "1234556"
+}
+
+{
+    "name": "Bob",
+    "phone": "3343556"
+}
+
+{
+    "name": "Alice",
+    "phone": "8377903"
+}
+
+{
+    "name": "Tom",
+    "phone": "40548773"
+}
+
+{
+    "name": "Lucy",
+    "phone": "8577655"
+}
+
+{
+    "name": "David",
+    "phone": "48595776"
+}
+
+{
+    "name": "Mary",
+    "phone": "49577794"
+}
+
+{
+    "name": "Alice",
+    "phone": "948766"
+}
+
+
+Отримання даних за id
+GET
+http://localhost:8081/api/v1/contacts/2
+
+
+Оновлення даних за id
+PUT
+http://localhost:8081/api/v1/contacts/2
+
+Налаштування в Postman: Body, raw, JSON.
+
+{
+    "name": "Bob",
+    "phone": "34343434"
+}
+
+Видалення даних за id
+DELETE
+http://localhost:8081/api/v1/contacts/5
+
+
+ДАЛІ REST-запити в
+org.example.app.service.impl.ContactService
+
